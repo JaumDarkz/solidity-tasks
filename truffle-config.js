@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const { mnemonic } = require("./secrets.json");
+const { mnemonic, ETHERSCAN_API_KEY } = require("./secrets.json");
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -82,7 +82,7 @@ module.exports = {
       confirmation: 2,
       timeoutBlocks: 800,
       skipDryRun: true // If in testnet, use true, otherwise use false.
-    }
+    },    
 
     //
     // An additional network, but with some advanced options…
@@ -116,6 +116,11 @@ module.exports = {
   // Set default mocha options here, use special reporters, etc.
   mocha: {
     // timeout: 100000
+  },
+
+  plugins: ['truffle-plugin-verify'],
+  api_keys: {
+    etherscan: ETHERSCAN_API_KEY 
   },
 
   // Configure your compilers

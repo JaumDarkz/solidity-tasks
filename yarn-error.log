@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\vinic\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+  C:\Program Files\nodejs\node.exe C:\Users\vinic\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add truffle-plugin-verify
 
 PATH: 
   C:\Program Files\WindowsApps\Microsoft.PowerShell_7.2.6.0_x64__8wekyb3d8bbwe;C:\Users\vinic\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\vinic\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\openjdk-11.0.13_8\bin;C:\Program Files\nodejs;C:\Program Files (x86)\dotnet;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\vinic\AppData\Local\Microsoft\WindowsApps;C:\Users\vinic\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vinic\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,17 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Users\vinic\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137143:13)
-      at Interface.emit (node:events:526:28)
-      at Interface._ttyWrite (node:readline:1081:16)
-      at ReadStream.onkeypress (node:readline:288:10)
-      at ReadStream.emit (node:events:526:28)
-      at emitKeys (node:internal/readline/utils:358:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
-      at ReadStream.emit (node:events:526:28)
-      at addChunk (node:internal/streams/readable:315:12)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
 
 npm manifest: 
   {
